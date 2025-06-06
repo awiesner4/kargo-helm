@@ -1,0 +1,9 @@
+kind: Kustomization
+resources:
+  - resources/warehouse.yaml
+  - resources/project.yaml
+  - resources/promotiontask.yaml
+  - resources/stages.yaml
+
+generators:
+  - keychain-secret-generator.yaml

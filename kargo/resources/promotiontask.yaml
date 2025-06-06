@@ -8,7 +8,7 @@ spec:
   - name: image
     value: ghcr.io/awiesner4/guestbook
   - name: repoURL
-    value: https://github.com/awiesner4/kargo-helm.git
+    value: https://github.com/awiesner4/kargo-demo.git
   - name: branch
     value: main
   - name: envPath
@@ -23,6 +23,7 @@ spec:
         path: ./src
       - branch: ${{ vars.branch }}
         path: ./out
+
   - uses: yaml-update
     as: update-image
     config:
